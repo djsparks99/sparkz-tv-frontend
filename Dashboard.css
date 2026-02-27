@@ -1,0 +1,142 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(124, 58, 237, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #7c3aed;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 150px;
+}
+
+.key-section {
+  margin-bottom: 1.5rem;
+}
+
+.key-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.key-display {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.key-input {
+  flex: 1;
+  word-break: break-all;
+  user-select: all;
+}
+
+.copy-btn {
+  background: rgba(124, 58, 237, 0.2);
+  color: #7c3aed;
+  border: 1px solid rgba(124, 58, 237, 0.5);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(124, 58, 237, 0.3);
+  border-color: #7c3aed;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.stat-code {
+  font-family: 'Courier New', monospace;
+  color: #7c3aed;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    min-width: auto;
+  }
+}
